@@ -1,0 +1,266 @@
+ --------------------------------------
+|        Basic Data Structure          |
+ '-------------------------------------'
+Data Structure
+---------------
+1. Arrays
+2. Hash Maps/Dictionary
+3. Heaps
+4. Sets
+5. Stack
+6. Queues
+7. Strings
+8. Tree
+
+Algorithm
+---------
+1. Searching
+2. Sorting
+3. Recursion
+4. Dynamic Programming
+
+Definition and example
+---------------------
+Data structure
+    -->It is a way of organizing the
+       data so that i can be used efficiently
+1.Array
+---------
+-->It is a collection of items stored at
+    contiguous memory locations
+--> It is a data structure
+
+Types of array
+--------------
+1-D array
+2-D array
+
+#Define <-- It is called macros
+
+Uses
+-->Array stores data elements of the same data type.
+-->Arrays can be used for CPU scheduling.
+-->Used to Implement other data structures like Sta
+
+2. Hash Maps/Dictionary
+-----------------------
+-->Hash maps are indexed data structures. A hash map
+    makes use of a hash function to compute an index
+    with a key into an array of buckets or slots
+--> It act same like python dictionary.
+
+
+3.Heaps
+--------
+--> Heap is a special tree structure in which if each
+    parent node is less than or equal to its child node
+    Then it is called a Min Heap.If each parent node is
+    greater than or equal to its child node then it is
+    called a max heap.
+
+--> It is very useful is implementing priority queues
+    where the queue item with higher weightage is given
+    more priority in processing
+
+4.Sets
+-------
+--> A Set is an unordered collection data type that is
+    iterable, mutable and has no duplicate elements
+
+--> Since sets are unordered, we cannot access items
+    using indexes like we do in lists.
+
+5.Stack
+--------
+--> It is a linear data structure which follows a par
+    -ticular order in which the operations are performed.
+    The order may be LIFO(Last In First Out) or
+    FILO(First In Last Out).
+
+--> A pile of book ,plates piled is an eg of stack
+
+Operations in stack
+-------------------
+    push()
+    pop()
+    isFull()
+    isEmpty()
+
+6.Queue
+-------
+--> A Queue is a linear structure which follows a par
+    -ticular order in which the operations are performed.
+    The order is First In First Out (FIFO)
+
+--> The difference between stacks and queues is in removing
+     In a stack we remove the item the most recently added
+     while in a queue, we remove the item the least recently added.
+
+Operations in Queue
+-------------------
+    Enqueue()
+    Dequeue()
+    Rear
+    Front
+
+7. Strings
+-----------
+--> It is a sequence of characters, either as a literal
+    constant or as some kind of variable.
+
+
+
+
+8. Tree
+--------
+    --> A tree is a nonlinear data structure, compared to arrays,
+    linked lists, stacks and queues which are linear data
+    structures. A tree can be empty with no nodes or a tree
+    is a structure consisting of one node called the root and
+    zero or one or more subtrees
+
+    --> We can use arrays, and classes connected lists or other kinds
+    of data structures to implement the tree.
+
+
+------------------------------------------------------------------
+|                        Algorithm                               |
+------------------------------------------------------------------
+    --> An algorithm is simply a set of steps used to complete a specific task.
+
+1. Searching
+------------
+
+Three types of searching happend
+    --> Linear
+        >Finding elements by scanning entire arrays
+    --> Binary
+        >Dividing the arrays in two parts
+        >First sort the arrays
+        >Take low  ,mid and high
+    --> Hashing
+        >Finding element using key indexing
+
+2. Sorting
+----------
+    -->  Sorting Algorithm is used to rearrange a given array
+    or list elements according to a comparison operator on
+    the elements
+
+Popular sorting algorithm
+-------------------------
+
+  I) Selection Sort
+-------------------
+    --> The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
+    from unsorted part and putting it at the beginning
+
+    > The subarray which is already sorted.
+    > Remaining subarray which is unsorted.
+
+   II) Bubble Sort
+--------------------
+    --> It repeatedly swapping the adjacent elements if they are in wrong order.
+    > The algo needs to be whole pass so that it can be sorted
+
+   III) Insertion Sort
+--------------------
+    --> The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed
+    at the correct position in the sorted part.
+
+To sort an array of size n in ascending order
+    > Iterate from arr[1] to arr[n] over the array.
+    > Compare the current element (key) to its predecessor.
+    > If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position
+    up to make space for the swapped element.
+
+    IV) Merge Sort
+--------------------
+    -->  Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges
+    the two sorted halves.
+
+    Algorithm
+    -----------
+    Here l = left index
+         r = right index
+         m = middle index
+    MergeSort(arr[], l,  r)
+    If r > l
+        Find the middle point to divide the array into two halves:
+             middle m = l+ (r-l)/2
+        Call mergeSort for first half:
+             Call mergeSort(arr, l, m)
+        Call mergeSort for second half:
+             Call mergeSort(arr, m+1, r)
+        Merge the two halves sorted in step 2 and 3:
+             Call merge(arr, l, m, r)
+    V) Quick Sort
+--------------------
+    --> It is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array
+     around the picked pivot.
+
+     > You can pick pivot as any element
+
+     Algorithm
+     ----------
+
+    VI) Heap Sort
+--------------------
+    --> Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar
+    to selection sort where we first find the minimum element and place the minimum element at the beginning.
+    We repeat the same process for the remaining elements.
+
+    VII) Radix Sort
+--------------------
+    --> The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix
+    sort uses counting sort as a subroutine to sort.
+
+    VIII) Bucket Sort
+------------------------
+    --> It is  is mainly useful when input is uniformly distributed over a range
+
+    Algorithm
+  -------------
+    bucketSort(arr[], n)
+     > Create n empty buckets (Or lists).
+     > Do following for every array element arr[i].
+     >.....a) Insert arr[i] into bucket[n*array[i]]
+     > Sort individual buckets using insertion sort.
+     > Concatenate all sorted buckets.
+
+3. Recursion
+--------------
+    --> The process in which a function calls itself directly or indirectly is called recursion and the
+    corresponding function is called as recursive function.
+
+Common problems that can be solved using recursion
+--------------------------------------------------
+    >Tower of Hanoi
+    >Fibonacci Series
+    >DFS of graph
+    >Tree Traversals
+
+4. Dynamic Programming
+-----------------------
+--> It is an algorithmic paradigm that solves a given complex problem by breaking it into subproblems
+ and stores the results of subproblems to avoid computing the same results again.
+
+--> It is an optimization of recursion
+--> Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it
+    using Dynamic Programming.
+
+Approach to solve and identify dynamic programming problems
+-----------------------------------------------------------
+
+  -->Identify if it is a DP problem
+  -->Decide a state expression with
+      least parameters
+  -->Formulate state relationship
+  -->Do tabulation (or add memoization)
+
+Main Components of Dynamic problems
+------------------------------------
+--> Overlapping Subproblems
+
+    > Optimal Substructure Property
+
